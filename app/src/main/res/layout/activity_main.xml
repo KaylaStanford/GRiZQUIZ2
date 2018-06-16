@@ -1,0 +1,262 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.grizquiz.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/griz"/>
+
+        <TextView
+            android:id="@+id/question_one_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="1. What instrument does GRiZ play?"
+            android:textSize="20dp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/instrument_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/trumbone_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Trumbone"
+                android:textColor="#03244d"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/Piano_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piano"
+                android:textColor="#03244d"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/saxophone_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Saxophone"
+                android:textColor="#03244d"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/guitar_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Guitar"
+                android:textColor="#03244d"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_two_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. What year was GRiZ born?"
+            android:textSize="20dp"
+            android:textColor="#03244d"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/birthview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex. 1900"
+            android:textColor="#03244d"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/question_three_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. What Zodiac sign is GRiZ?"
+            android:textSize="20dp"
+            android:textColor="#03244d"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/zodiac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/Leo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Leo"
+                android:textColor="#03244d"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/Libra_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Libra"
+                android:textColor="#03244d"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/Gemini_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Gemini"
+                android:textColor="#03244d"
+                android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/Aries_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Aries"
+                android:textColor="#03244d"
+                android:textSize="20sp" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/question_four_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Griz was born in the Wolverine state, otherwise known as _____?"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/Ohio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Ohio"
+                android:textColor="#03244d"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/Michigan_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Michigan"
+                android:textColor="#03244d"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/Montana_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Montana"
+                android:textColor="#03244d"
+                android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/Pennsylvania_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#03244d"
+                android:text="Pennsylvania"
+                android:textSize="20sp" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/question_five_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Which of the following are GRiZ albums? (Check all that apply)"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/mad_liberation_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mad Liberation"
+            android:textSize="20sp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/good_will_prevail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Will Prevail"
+            android:textSize="20sp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/rebel_era"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rebel Era"
+            android:textSize="20sp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/say_it_loud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Say it Loud"
+            android:textSize="20sp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:id="@+id/dark_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark side of the moon"
+            android:textSize="20sp"
+            android:textColor="#03244d"
+            android:fontFamily="sans-serif" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:onClick="submitQuiz"
+            android:background="#03244d"
+            android:textColor="#FAFAFA"
+            android:text="submit" />
+
+
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+   </ScrollView>
