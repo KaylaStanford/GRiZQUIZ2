@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         int question3Score = checkQuestion3();
 
-        int question4Score = checkQuestion4();
+        int question4Score = checkQuestionFour();
 
         CheckBox madLiberationCheckBox = (CheckBox) findViewById(R.id.mad_liberation_checkbox);
         boolean hasmadLiberation = madLiberationCheckBox.isChecked();
@@ -56,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         score = question1Score + questionTwoScore + question3Score + question4Score + checkBoxScore;
-        Toast.makeText(this, "Question4 value: " + question4Score + " !", Toast.LENGTH_LONG).show();
+    /*   Handy debugging popup for question 4 that wasn't working:
+        Toast.makeText(this, "Question4 value: " + question4Score + " !", Toast.LENGTH_LONG).show(); */
         Toast.makeText(this, "You scored " + score + " out of 100 points!", Toast.LENGTH_LONG).show();
 
     }
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
      * to content inside correct answer variable + 20 points is awarded.
      * @return is  either 0 or 20 points.
      */
-    private int checkQuestion4() {
+    private int checkQuestionFour() {
         int questionFourPoints = 0;
         int answer = R.id.Michigan_button;
 
