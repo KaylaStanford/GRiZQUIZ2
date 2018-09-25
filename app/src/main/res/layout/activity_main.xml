@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         tools:context="com.example.android.grizquiz.MainActivity" >
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -23,7 +23,7 @@
             android:id="@+id/question_one_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="20sp"
             android:text="1. What instrument does GRiZ play?"
             android:textSize="20dp"
             android:textColor="#03244d"
@@ -42,7 +42,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Trumbone"
                 android:textColor="#03244d"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <RadioButton
                 android:id="@+id/Piano_button"
                 android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
                 android:text="Piano"
                 android:textColor="#03244d"
                 android:fontFamily="sans-serif"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <RadioButton
                 android:id="@+id/saxophone_button"
                 android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Saxophone"
                 android:textColor="#03244d"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <RadioButton
                 android:id="@+id/guitar_button"
                 android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Guitar"
                 android:textColor="#03244d"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
         </RadioGroup>
 
         <TextView
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2. What year was GRiZ born?"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="#03244d"
             android:layout_margin="20dp"
             android:fontFamily="sans-serif"
@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3. What Zodiac sign is GRiZ?"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="#03244d"
             android:layout_margin="20dp"
             android:fontFamily="sans-serif"
@@ -111,7 +111,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Leo"
                 android:textColor="#03244d"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <RadioButton
                 android:id="@+id/Libra_button"
                 android:layout_width="wrap_content"
@@ -119,7 +119,7 @@
                 android:text="Libra"
                 android:textColor="#03244d"
                 android:fontFamily="sans-serif"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <RadioButton
                 android:id="@+id/Gemini_button"
                 android:layout_width="wrap_content"
@@ -159,7 +159,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Ohio"
                 android:textColor="#03244d"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <RadioButton
                 android:id="@+id/Michigan_button"
                 android:layout_width="wrap_content"
@@ -167,7 +167,7 @@
                 android:text="Michigan"
                 android:textColor="#03244d"
                 android:fontFamily="sans-serif"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <RadioButton
                 android:id="@+id/Montana_button"
                 android:layout_width="wrap_content"
@@ -206,7 +206,7 @@
             android:fontFamily="sans-serif" />
 
         <CheckBox
-            android:id="@+id/good_will_prevail"
+            android:id="@+id/good_will_prevail_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Good Will Prevail"
@@ -215,7 +215,7 @@
             android:fontFamily="sans-serif" />
 
         <CheckBox
-            android:id="@+id/rebel_era"
+            android:id="@+id/rebel_era_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rebel Era"
@@ -224,7 +224,7 @@
             android:fontFamily="sans-serif" />
 
         <CheckBox
-            android:id="@+id/say_it_loud"
+            android:id="@+id/say_it_loud_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Say it Loud"
@@ -233,7 +233,7 @@
             android:fontFamily="sans-serif" />
 
         <CheckBox
-            android:id="@+id/dark_side"
+            android:id="@+id/dark_side_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dark side of the moon"
@@ -252,11 +252,6 @@
             android:textColor="#FAFAFA"
             android:text="submit" />
 
-
-
-
-
-
-    </LinearLayout>
+        </LinearLayout>
     </RelativeLayout>
    </ScrollView>

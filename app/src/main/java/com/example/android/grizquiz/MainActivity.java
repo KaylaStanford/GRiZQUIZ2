@@ -38,16 +38,16 @@ public class MainActivity extends AppCompatActivity {
         CheckBox madLiberationCheckBox = (CheckBox) findViewById(R.id.mad_liberation_checkbox);
         boolean hasmadLiberation = madLiberationCheckBox.isChecked();
 
-        CheckBox goodWillPrevailCheckBox = (CheckBox) findViewById(R.id.good_will_prevail);
+        CheckBox goodWillPrevailCheckBox = (CheckBox) findViewById(R.id.good_will_prevail_checkbox);
         boolean hasGoodWillPrevail = goodWillPrevailCheckBox.isChecked();
 
-        CheckBox darkSideCheckBox = (CheckBox) findViewById(R.id.dark_side);
+        CheckBox darkSideCheckBox = (CheckBox) findViewById(R.id.dark_side_checkbox);
         boolean hasdarkSide = darkSideCheckBox.isChecked();
 
-        CheckBox rebelEraCheckBox = (CheckBox) findViewById(R.id.rebel_era);
+        CheckBox rebelEraCheckBox = (CheckBox) findViewById(R.id.rebel_era_checkbox);
         boolean hasRebelEra = rebelEraCheckBox.isChecked();
 
-        CheckBox sayitLoudCheckBox = (CheckBox) findViewById(R.id.say_it_loud);
+        CheckBox sayitLoudCheckBox = (CheckBox) findViewById(R.id.say_it_loud_checkbox);
         boolean hasSayitLoud = sayitLoudCheckBox.isChecked();
 
 
@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         score = question1Score + questionTwoScore + question3Score + question4Score + checkBoxScore;
-    /*   Handy debugging popup for question 4 that wasn't working:
-        Toast.makeText(this, "Question4 value: " + question4Score + " !", Toast.LENGTH_LONG).show(); */
         Toast.makeText(this, "You scored " + score + " out of 100 points!", Toast.LENGTH_LONG).show();
 
     }
@@ -126,7 +124,6 @@ public class MainActivity extends AppCompatActivity {
         int questionFourPoints = 0;
         int answer = R.id.Michigan_button;
 
-        /* RadioButton StateRadioGroup = (RadioButton) findViewById(R.id.Michigan_button); */
         RadioGroup StateRadioGroup = (RadioGroup) findViewById(R.id.State);
         int selected = StateRadioGroup.getCheckedRadioButtonId();
         if (selected == answer) {
@@ -139,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method checks and scores the checkboxes that make up question five.
-     * When a checkbox is checked the right answers get 5 points and wrong answers get nothing.
+     * When all three checkboxes are checked the right answer get 20 points and the wrong answer get nothing.
      *
      * @param addMadLiberation is if the "Mad Liberation" box is checked or unchecked.
      * @param addGoodWillPrevail is if the "Good Will Prevail" box is checked or unchecked.
@@ -155,23 +152,13 @@ public class MainActivity extends AppCompatActivity {
                                          {
         int checkBoxPoints = 0;
 
-        if (addMadLiberation) {
-            checkBoxPoints += 5;
+        if (addMadLiberation && addGoodWillPrevail && addRebelEra && addSayitLoud && !addDarkSide ) {
+            checkBoxPoints += 20;
         }
 
-        if (addGoodWillPrevail) {
-            checkBoxPoints += 5;
-        }
 
         if (addDarkSide) {
 //            Incorrect answer - Don't count
-        }
-
-        if (addRebelEra) {
-          checkBoxPoints += 5;
-        }
-        if (addSayitLoud) {
-           checkBoxPoints += 5;
         }
 
          else {
@@ -179,9 +166,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return checkBoxPoints;
-    }
+                                         }
 
-}
+    }
 }
 
 
